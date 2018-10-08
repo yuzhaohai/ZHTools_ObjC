@@ -17,3 +17,8 @@ FOUNDATION_EXPORT const unsigned char ZHTools_ObjCVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <ZHTools_ObjC/PublicHeader.h>
 
 
+#import <ZHTools_ObjC/ZHNavigationController.h>
+#import <ZHTools_ObjC/ZHTabBarController.h>
+#import <ZHTools_ObjC/ZHViewController.h>
+
+#import <ZHTools_ObjC/ZH_Define.h>
