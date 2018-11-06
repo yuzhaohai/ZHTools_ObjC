@@ -22,3 +22,7 @@ FOUNDATION_EXPORT const unsigned char ZHTools_ObjCVersionString[];
 #import <ZHTools_ObjC/ZHViewController.h>
 
 #import <ZHTools_ObjC/ZH_Define.h>
+
+#import <ZHTools_ObjC/ZHButton.h>
+
+#import <ZHTools_ObjC/ZHUtility.h>
