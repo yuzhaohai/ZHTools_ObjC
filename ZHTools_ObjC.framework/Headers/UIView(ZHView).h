@@ -106,6 +106,10 @@ extern NSString *__nonnull zh_borderColorHEX;
 extern NSString *__nonnull zh_cornerRadius;
 
 
+//keyboardType
+//sepcolor
+//masksToBounds
+
 @interface UIView(ZHView)
 
 + (UIView *_Nonnull)viewWithDictionary:(NSDictionary *_Nullable)dictionary;
