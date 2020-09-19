@@ -41,15 +41,26 @@ typedef void(^ZHButtonActionBlock)(UIButton *button);
  左侧按钮点击事件
  */
 @property (copy, nonatomic) ZHButtonActionBlock leftNavigationButtonActionBlock;
+- (void)leftNavigationButtonAction ;
 
 /**
  右侧按钮点击事件
  */
-@property (copy, nonatomic) ZHButtonActionBlock rightNavigationButtonActionBlock;
+@property (nonatomic, copy) void (^rightNavigationButtonActionBlock) (UIButton *button);
+- (void)rightNavigationButtonAction ;
 
-/**
- 当前ViewController是否正在显示
- */
-- (BOOL)zh_isVisible;
+#pragma mark -  以下方法处理自动横屏
+- (UIStatusBarStyle)preferredStatusBarStyle;
+
+- (BOOL)prefersStatusBarHidden;
+
+- (UIStatusBarAnimation)preferredStatusBarUpdateAnimation;
+
+- (BOOL)shouldAutorotate;
+
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations;
+
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation;
+#pragma mark -  以上方法处理自动横屏
 
 @end
