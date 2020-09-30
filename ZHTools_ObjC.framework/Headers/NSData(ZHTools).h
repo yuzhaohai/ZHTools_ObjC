@@ -6,13 +6,18 @@
 //  Copyright © 2020 ZHTools. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import UIKit;
+@import Foundation;
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface NSData (ZHTools)
 
-+ (NSData *)dataFromObject:(id)theObject ;
+///  NSDictionary / NSArray 转 jsonData
++ (NSData *)zh_dataWithJSONObject:(id)theObject ;
+
+///  jsonData 转 NSDictionary / NSArray
+- (id)zh_jsonObjectValue ;
 
 @end
 

@@ -6,7 +6,8 @@
 //  Copyright © 2020 ZHTools. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+@import UIKit;
+@import Foundation;
 
 NS_ASSUME_NONNULL_BEGIN
 

@@ -6,7 +6,8 @@
 //  Copyright © 2016年 于兆海. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import UIKit;
+@import Foundation;
 
 @interface UIFont(ZHTools)
 

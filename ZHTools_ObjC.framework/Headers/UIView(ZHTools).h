@@ -6,7 +6,8 @@
 //  Copyright © 2016年 于兆海. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import UIKit;
+@import Foundation;
 
 typedef void(^ZHGestureRecognizerBlock)(UIGestureRecognizer *gestureRecoginzer);
 
@@ -20,7 +21,6 @@ typedef void(^ZHGestureRecognizerBlock)(UIGestureRecognizer *gestureRecoginzer);
  添加圆角 使用UIBezierPath提升效率  corner传值：(UIRectCornerBottomLeft | UIRectCornerBottomRight)
  */
 - (void)zh_addCornerRadius:(float)cornerRadius withCorners:(UIRectCorner)corners;
-
 
 #pragma mark -  UIAdditions
 @property (nonatomic) CGFloat left;
@@ -44,9 +44,11 @@ typedef void(^ZHGestureRecognizerBlock)(UIGestureRecognizer *gestureRecoginzer);
 /**
  添加tap手势
  */
-- (void)addTapGestureRecognizerWithBlock:(ZHGestureRecognizerBlock)block;
+- (void)zh_addTapGestureRecognizerWithBlock:(ZHGestureRecognizerBlock)block;
 
-- (void)addLineWithFrame:(CGRect)frame color:(UIColor *)color ;
-- (void)addLineWithFrame:(CGRect)frame color:(UIColor *)color cornerRadius:(CGFloat)cornerRadius ;
+- (void)zh_addLineWithFrame:(CGRect)frame color:(UIColor *)color ;
+- (void)zh_addLineWithFrame:(CGRect)frame color:(UIColor *)color cornerRadius:(CGFloat)cornerRadius ;
+
+- (UIActivityIndicatorView *)zh_showUIActivityIndicatorViewWithStyle:(UIActivityIndicatorViewStyle)style center:(CGPoint)center;
 
 @end

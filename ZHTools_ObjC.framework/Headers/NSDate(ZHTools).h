@@ -6,11 +6,12 @@
 //  Copyright © 2016年 于兆海. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import UIKit;
+@import Foundation;
 
 @interface NSDate(ZHTools)
 
-@property (readonly, nonatomic) NSInteger zh_Year;
+@property (readonly, nonatomic) NSInteger zh_year;
 
 /**
  *
@@ -28,15 +29,15 @@
  *  [12 - December]
  *
  */
-@property (readonly, nonatomic) NSInteger zh_Month;
+@property (readonly, nonatomic) NSInteger zh_month;
 
-@property (readonly, nonatomic) NSInteger zh_Day;
+@property (readonly, nonatomic) NSInteger zh_day;
 
-@property (readonly, nonatomic) NSInteger zh_Hour;
+@property (readonly, nonatomic) NSInteger zh_hour;
 
-@property (readonly, nonatomic) NSInteger zh_Minute;
+@property (readonly, nonatomic) NSInteger zh_minute;
 
-@property (readonly, nonatomic) NSInteger zh_Second;
+@property (readonly, nonatomic) NSInteger zh_second;
 
 /**
  *
@@ -49,41 +50,40 @@
  *  [7 - Saturday]
  *
  */
-@property (readonly, nonatomic) NSInteger zh_Weekday;
+@property (readonly, nonatomic) NSInteger zh_weekday;
 
 /**
  * 判断是否是润年
- * @return YES表示润年，NO表示平年
  */
-- (BOOL)zh_IsLeapYear;
+- (BOOL)zh_isLeapYear;
 
-- (BOOL)zh_IsEarlierThanDate:(NSDate *)aDate;
+- (BOOL)zh_isEarlierThanDate:(NSDate *)aDate;
 
-- (BOOL)zh_IsLaterThanDate:(NSDate *)aDate;
+- (BOOL)zh_isLaterThanDate:(NSDate *)aDate;
 
-- (NSUInteger)zh_DaysInYear;
+- (NSUInteger)zh_daysInYear;
 
-- (NSUInteger)zh_DaysInMonth;
+- (NSUInteger)zh_daysInMonth;
 
-- (NSDate *)zh_BeginningOfDay;
+- (NSDate *)zh_beginningOfDay;
 
-- (NSDate *)zh_EndOfDay;
+- (NSDate *)zh_endOfDay;
 
-- (NSDate *)zh_BeginningOfWeek;
+- (NSDate *)zh_beginningOfWeek;
 
-- (NSDate *)zh_EndOfWeek;
+- (NSDate *)zh_endOfWeek;
 
-- (NSDate *)zh_BeginningOfMonth;
+- (NSDate *)zh_beginningOfMonth;
 
-- (NSDate *)zh_EndOfMonth;
+- (NSDate *)zh_endOfMonth;
 
-- (NSDate *)zh_BeginningOfYear;
+- (NSDate *)zh_beginningOfYear;
 
-- (NSDate *)zh_EndOfYear;
+- (NSDate *)zh_endOfYear;
 
 #pragma mark -  NSDate & NSString
 
-+ (NSDateFormatter *)sharedDateFormatter ;
++ (NSDateFormatter *)zh_sharedDateFormatter ;
 
 /*
  
@@ -136,10 +136,10 @@
  vvvv：Pacific Time
  
  */
-+ (NSDate *)dateFromString:(NSString *)string dateFormat:(NSString *)dateFormat;
++ (NSDate *)zh_dateFromString:(NSString *)string dateFormat:(NSString *)dateFormat;
 
-- (NSString *)stringWithDateFormat:(NSString *)dateFormat;
+- (NSString *)zh_stringWithDateFormat:(NSString *)dateFormat;
 
-+ (NSDate *)dateFromISO8601String:(NSString *)string ;
++ (NSDate *)zh_dateFromISO8601String:(NSString *)string ;
 
 @end

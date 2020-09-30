@@ -6,7 +6,8 @@
 //  Copyright © 2016年 于兆海. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import UIKit;
+@import Foundation;
 
 ///颜色渐变方向
 typedef NS_ENUM(NSUInteger, ZHColorGradientDirection) {
@@ -23,27 +24,27 @@ typedef NS_ENUM(NSUInteger, ZHColorGradientDirection) {
  *  @brief  随机色
  *
  */
-+ (UIColor *)zh_RandomColor;
++ (UIColor *)zh_randomColor;
 
 /*!
  *
  *  @brief  构造一个色值,参数样式：0xff8800
  *
  */
-+ (UIColor *)zh_ColorWithHex:(UInt32)hex;
++ (UIColor *)zh_colorWithHex:(UInt32)hex;
 
 /*!
  *
  *  @brief  构造一个色值,参数样式：0xff8800
  *
  */
-+ (UIColor *)zh_ColorWithHex:(UInt32)hex alpha:(float)alpha;
++ (UIColor *)zh_colorWithHex:(UInt32)hex alpha:(float)alpha;
 
 /*!
  *
  *  @brief  构造一个色值，字符串样式可以使一下任意一种：0xffffff、0X000000、#000000、000000
  */
-+ (UIColor *)zh_ColorWithHexString:(NSString *)hexString;
++ (UIColor *)zh_colorWithHexString:(NSString *)hexString;
 
 /*!
  *
@@ -51,7 +52,7 @@ typedef NS_ENUM(NSUInteger, ZHColorGradientDirection) {
  *  @brief  构造一个色值，字符串样式可以使一下任意一种：0xffffff、0X000000、#000000、000000
  *
  */
-+ (UIColor *)zh_ColorWithHexString:(NSString *)hexString alpha:(CGFloat)alpha;
++ (UIColor *)zh_colorWithHexString:(NSString *)hexString alpha:(CGFloat)alpha;
 
 /**
  UIColor 转 网页颜色字符串

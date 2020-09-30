@@ -21,7 +21,7 @@ extern NSString *__nonnull zh_contentMode;
 extern NSString *__nonnull zh_tintColor;
 extern NSString *__nonnull zh_frame;
 
-extern NSString *__nonnull zh_SuperView;
+extern NSString *__nonnull zh_superView;
 
 #pragma mark -  UIControl : UIView
 extern NSString *__nonnull zh_enabled;
@@ -33,6 +33,7 @@ extern NSString *__nonnull zh_contentVerticalAlignment;
 extern NSString *__nonnull zh_contentHorizontalAlignment;
 
 #pragma mark -  UIButton : UIControl
+extern NSString *__nonnull zh_buttonType;
 extern NSString *__nonnull zh_normalTitle;
 extern NSString *__nonnull zh_selectedTitle;
 extern NSString *__nonnull zh_normalAttributedTitle;
@@ -97,6 +98,9 @@ extern NSString *__nonnull zh_editable;
 extern NSString *__nonnull zh_selectable;
 
 #pragma mark -  UITableView / UICollectionView : UIScrollView
+extern NSString *__nonnull zh_tableViewStyle;
+extern NSString *__nonnull zh_tableHeaderView;
+extern NSString *__nonnull zh_tableFooterView;
 extern NSString *__nonnull zh_dataSource;
 extern NSString *__nonnull zh_allowsSelection;
 extern NSString *__nonnull zh_separatorStyle;
@@ -123,22 +127,8 @@ extern NSString *__nonnull zh_masksToBounds;
 @interface UIView(ZHView)
 
 #pragma mark -  便利构造器
-+ (UIView *_Nonnull)viewWithDictionary:(NSDictionary *_Nullable)dictionary;
 
-+ (UIButton *_Nonnull)buttonWithDictionary:(NSDictionary *_Nullable)dictionary;
-
-+ (UITextField *_Nonnull)textFieldWithDictionary:(NSDictionary *_Nullable)dictionary;
-
-+ (UISwitch *_Nonnull)switchWithDictionary:(NSDictionary *_Nullable)dictionary;
-
-+ (UITextView *_Nonnull)textViewWithDictionary:(NSDictionary *_Nullable)dictionary;
-
-+ (UITableView *_Nonnull)tableViewWithDictionary:(NSDictionary *_Nullable)dictionary;
-
-+ (UILabel *_Nonnull)labelWithDictionary:(NSDictionary *_Nullable)dictionary;
-
-+ (UIImageView *_Nonnull)imageViewWithDictionary:(NSDictionary *_Nullable)dictionary;
-
++ (instancetype _Nullable)viewWithDictionary:(NSDictionary *_Nullable)dictionary;
 
 #pragma mark -  setPropertyWithDictionary
 - (void)setPropertyWithDictionary:(NSDictionary *_Nullable)dictionary;

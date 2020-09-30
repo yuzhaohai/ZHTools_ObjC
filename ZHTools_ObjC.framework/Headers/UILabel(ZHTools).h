@@ -6,10 +6,11 @@
 //  Copyright © 2016年 于兆海. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import UIKit;
+@import Foundation;
 
 @interface UILabel(ZHTools)
 
-- (UILabel *)setText:(NSString *)text WithFont:(UIFont *)font width:(CGFloat)width lineSpace:(float)lineSpace minHeight:(CGFloat)minHeight ;
+- (UILabel *)setText:(NSString *)text withFont:(UIFont *)font width:(CGFloat)width lineSpace:(float)lineSpace minHeight:(CGFloat)minHeight ;
 
 @end

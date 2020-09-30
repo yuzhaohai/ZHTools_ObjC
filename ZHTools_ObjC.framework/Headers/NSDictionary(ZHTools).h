@@ -6,7 +6,8 @@
 //  Copyright © 2016年 于兆海. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import UIKit;
+@import Foundation;
 
 
 /*!
@@ -19,28 +20,28 @@
 /**
  遍历
  */
-- (void)zh_Each:(void (^)(id key, id value))block;
+- (void)zh_each:(void (^)(id key, id value))block;
 
 /**
  @
  */
-- (id)zh_Value4Key:(NSString *)key;
+- (id)zh_value4Key:(NSString *)key;
 
 
 /**
  若key对应的值为NSNumber类型，返回stringValue
  */
-- (NSString *)zh_StringValue4Key:(NSString *)key;
+- (NSString *)zh_stringValue4Key:(NSString *)key;
 
 /**
- NSDictionary 转 NSData
+ NSDictionary 转 jsonData
  */
-- (NSData *)zh_dataValue;
+- (NSData *)zh_jsonDataValue;
 
 /**
- NSData 转 NSDictionary
+ jsonData 转 NSDictionary
  */
-+ (NSDictionary *)zh_dictionaryFromData:(NSData *)data;
++ (NSDictionary *)zh_dictionaryFromJSONData:(NSData *)data;
 
 /**
  Json 转 NSDictionary
@@ -50,8 +51,18 @@
 /**
  NSDictionary转换成JSON字符串
  */
-- (NSString *)zh_JsonStringValue;
+- (NSString *)zh_jsonStringValue;
 
-- (NSMutableDictionary *)removeNULL;
+/**
+ 解析URL请求字符串为NSDictionary
+ */
++ (NSDictionary *)zh_dictionaryFromURL:(NSURL *)url;
+
+/**
+ 根据NSDictionary生成URL请求字符串
+ */
+- (NSString *)zh_urlQueryStringValue;
+
+- (NSMutableDictionary *)zh_removeNULL;
 
 @end

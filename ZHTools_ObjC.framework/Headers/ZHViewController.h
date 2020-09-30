@@ -6,7 +6,8 @@
 //  Copyright © 2016年 于兆海. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+@import UIKit;
+@import Foundation;
 
 typedef void(^ZHButtonActionBlock)(UIButton *button);
 

@@ -6,7 +6,8 @@
 //  Copyright © 2016年 于兆海. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import UIKit;
+@import Foundation;
 
 ///图片翻转方向
 typedef NS_ENUM(NSUInteger, ZHImageFlipDirection) {
@@ -18,25 +19,26 @@ typedef NS_ENUM(NSUInteger, ZHImageFlipDirection) {
 
 @interface UIImage(ZHTools)
 
-+ (UIImage *)zh_CaptureView:(UIView *)view;
++ (UIImage *)zh_captureView:(UIView *)view;
 
-+ (UIImage *)zh_CaptureScrollView:(UIScrollView *)view;
++ (UIImage *)zh_captureScrollView:(UIScrollView *)view;
 
-+ (UIImage *)zh_ImageWithColor:(UIColor *)color;
-+ (UIImage *)zh_ImageWithColor:(UIColor *)color size:(CGSize)size;
++ (UIImage *)zh_imageWithColor:(UIColor *)color;
++ (UIImage *)zh_imageWithColor:(UIColor *)color size:(CGSize)size;
 
-+ (UIImage *)zh_ImageNamed:(NSString *)name;
+///非缓存方式加载图片
++ (UIImage *)zh_imageNamed:(NSString *)name;
+///非缓存方式加载图片
++ (UIImage *)zh_imageNamed:(NSString *)name inBundle:(NSBundle *)bundle;
 
-+ (UIImage *)zh_ImageNamed:(NSString *)name inBundle:(NSBundle *)bundle;
-
-+ (UIImage *)imageFromVideoWithPath:(NSString *)path ;
++ (UIImage *)zh_imageFromVideoWithPath:(NSString *)path ;
 
 /// 启动图
-+ (UIImage *)launchImage;
++ (UIImage *)zh_launchImage;
 
 /// 获取应用图标
-+ (UIImage *)appIcon ;
++ (UIImage *)zh_appIcon ;
 
-- (UIImage *)noScaleToSize:(CGSize)size ;
+- (void)zh_save2AlbumWitnCompleteBlock:(void(^)(id zhObject))completeBlock ;
 
 @end

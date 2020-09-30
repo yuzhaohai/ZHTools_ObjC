@@ -6,7 +6,8 @@
 //  Copyright © 2016年 于兆海. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import UIKit;
+@import Foundation;
 
 @interface NSString(ZHTools)
 
@@ -16,14 +17,14 @@
  *  @brief  计算指定字体、宽度下文本的高度
  *
  */
-- (CGFloat)zh_HeightWithFont:(UIFont *)font width:(CGFloat)width;
+- (CGFloat)zh_heightWithFont:(UIFont *)font width:(CGFloat)width;
 
 /*!
  *
  *  @brief  计算指定字体、高度下文本的宽度
  *
  */
-- (CGFloat)zh_WidthWithFont:(UIFont *)font height:(CGFloat)height;
+- (CGFloat)zh_widthWithFont:(UIFont *)font height:(CGFloat)height;
 
 
 /*!
@@ -31,21 +32,21 @@
  *  @brief  计算指定字体、宽度、行距下文本的高度
  *
  */
-- (CGFloat)zh_HeightWithFont:(UIFont *)font width:(CGFloat)width lineSpace:(NSInteger)lineSpace;
+- (CGFloat)zh_heightWithFont:(UIFont *)font width:(CGFloat)width lineSpace:(NSInteger)lineSpace;
 
 /*!
  *
  *  @brief  去除空格后的字符串
  *
  */
-- (NSString *)zh_TrimedStringByWhitespace;
+- (NSString *)zh_trimedStringByWhitespace;
 
 /*!
  *
  *  @brief  去除空格与空行后的字符串
  *
  */
-- (NSString *)zh_TrimedStringByWhitespaceAndNewlines;
+- (NSString *)zh_trimedStringByWhitespaceAndNewlines;
 
 /*!
  *
@@ -59,46 +60,76 @@
  *  @brief  NSDictionary / NSArray转JSON字符串
  *
  */
-+ (NSString *)zh_JsonStringFromObject:(id)object;
++ (NSString *)zh_jsonStringFromObject:(id)object;
 
 /*!
  *
  *  @brief  判断字符串是否包含汉字
  *
  */
-- (BOOL)zh_IsContainChineseCharacter;
+- (BOOL)zh_isContainChineseCharacter;
 
 /*!
 *
 *  @brief  是否是手机号
 *
 */
-- (BOOL)zh_IsMobileNumber ;
+- (BOOL)zh_isMobileNumber ;
 
 /*!
 *
 *  @brief  是否是邮件地址
 *
 */
-- (BOOL)zh_IsEmailAddress ;
+- (BOOL)zh_isEmailAddress ;
 
 /*!
 *
-*  @brief  是否座机号
+*  @brief  是否是座机号
 *
 */
-- (BOOL)zh_IsFixedLineTelephoneNumber ;
+- (BOOL)zh_isFixedLineTelephoneNumber ;
 
-- (NSString *)stringCutted4ShownCharacterAmount:(NSInteger)charecterAmount ;
+/*!
+*
+*  @brief  返回字符数量限制的字符串
+*
+*/
+- (NSString *)zh_stringCutted4ShownCharacterAmount:(NSInteger)charecterAmount ;
 
-- (NSString *)removeCharactors:(NSArray *)array ;
+/*!
+*
+*  @brief  移除子字符串
+*
+*/
+- (NSString *)zh_removeCharactors:(NSArray *)array ;
 
-- (BOOL)isValidateIDCardNumber ;
+/*!
+*
+*  @brief  身份证号校验
+*
+*/
+- (BOOL)zh_isValidateIDCardNumber ;
 
-+ (NSString *)readableStringFromDate:(NSDate *)date ;
+/*!
+*
+*  @brief  NSDate 转成易识别的字符串
+*
+*/
++ (NSString *)zh_readableStringFromDate:(NSDate *)date ;
 
-- (BOOL)createFilePath;
+/*!
+*
+*  @brief  创建目录
+*
+*/
+- (BOOL)zh_createFilePath;
 
-- (void)call ;
+/*!
+*
+*  @brief  拨号
+*
+*/
+- (void)zh_call ;
 
 @end

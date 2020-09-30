@@ -6,7 +6,8 @@
 //  Copyright © 2020 ZHTools. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+@import UIKit;
+@import Foundation;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -33,6 +34,8 @@ NS_ASSUME_NONNULL_BEGIN
 + (instancetype)alertUIDatePickerWithTitle:(NSString *)title style:(UIAlertControllerStyle)style ;
 
 #pragma mark -  UIDatePicker end
+
++ (void)alertTitle:(NSString *)title message:(NSString *)message cancleButtonTitle:(NSString *)cancleButtonTitle;
 
 @end
 

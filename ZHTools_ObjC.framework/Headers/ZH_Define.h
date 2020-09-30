@@ -6,18 +6,18 @@
 //  Copyright © 2016年 于兆海. All rights reserved.
 //
 
-#define WeakObj(o) autoreleasepool{} __weak typeof(o) o##Weak = o;
-#define StrongObj(o) autoreleasepool{} __strong typeof(o) o = o##Weak;
+#define zh_WeakObj(o) autoreleasepool{} __weak typeof(o) o##Weak = o;
+#define zh_StrongObj(o) autoreleasepool{} __strong typeof(o) o = o##Weak;
 //用法
-//@WeakObj(self);
+//@zh_WeakObj(self);
 //[var setBlock:^{
-//    @StrongObj(self);
+//    @zh_StrongObj(self);
 //    [self doSomething];
 //}];
 
-#define iOSVersion [[[UIDevice currentDevice] systemVersion] floatValue]
+#define zh_iOSVersion [[[UIDevice currentDevice] systemVersion] floatValue]
 
-#define DocumentPath [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)objectAtIndex:0]
+#define zh_DocumentPath [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)objectAtIndex:0]
 
 #define zh_ScreenBounds [[UIScreen mainScreen] bounds]
 #define zh_ScreenHeight zh_ScreenBounds.size.height

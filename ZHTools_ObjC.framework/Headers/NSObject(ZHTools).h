@@ -6,13 +6,14 @@
 //  Copyright © 2016年 于兆海. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import UIKit;
+@import Foundation;
 
 @interface NSObject(ZHTools)
 
-- (void)zh_PerformBlock:(void (^)(void))block afterDelay:(NSTimeInterval)delay;
+- (void)zh_performBlock:(void (^)(void))block afterDelay:(NSTimeInterval)delay;
 
-+ (BOOL)zh_SwizzleMethod:(SEL)origionalMethod toMethod:(SEL)newMethod;
++ (BOOL)zh_swizzleMethod:(SEL)origionalMethod toMethod:(SEL)newMethod;
 
 
 /// 移除网络请求返回数据中的NULL
