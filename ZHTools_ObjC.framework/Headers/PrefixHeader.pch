@@ -1,0 +1,21 @@
+//
+//  PrefixHeader.pch
+//  ZHTools
+//
+//  Created by 于兆海 (QQ:695885883) on 2016/9/27.
+//  Copyright © 2016年 于兆海. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+@import UIKit;
+
+#import "ZH_Enum.h"
+#import "ZH_Define.h"
+#import "ZH_TypeDef.h"
+
+#endif /* PrefixHeader_pch */
