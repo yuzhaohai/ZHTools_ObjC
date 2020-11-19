@@ -41,4 +41,6 @@ typedef NS_ENUM(NSUInteger, ZHImageFlipDirection) {
 
 - (void)zh_save2AlbumWitnCompleteBlock:(void(^)(id zhObject))completeBlock ;
 
+- (UIImage*)zh_imageWithCornerRadius:(CGFloat)radius ;
+
 @end

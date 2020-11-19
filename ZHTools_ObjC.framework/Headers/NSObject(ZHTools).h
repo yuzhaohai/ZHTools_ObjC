@@ -17,6 +17,6 @@
 
 
 /// 移除网络请求返回数据中的NULL
-- (id)removeNULL ;
+- (id)zh_removeNULL ;
 
 @end

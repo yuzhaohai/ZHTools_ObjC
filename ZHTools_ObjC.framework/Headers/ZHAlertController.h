@@ -40,3 +40,18 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_ASSUME_NONNULL_END
+
+//UIAlertController *alertVc = [UIAlertController alertControllerWithTitle:@"本次直播为专场直播" message:nil preferredStyle:UIAlertControllerStyleAlert];
+//// 添加输入框 (注意:在UIAlertControllerStyleActionSheet样式下是不能添加下面这行代码的)
+//[alertVc addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
+//    textField.placeholder = @"请输入邀请码";
+//}];
+//UIAlertAction *action1 = [UIAlertAction actionWithTitle:@"确认" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
+//
+//    NSLog(@"ok, %@", [[alertVc textFields] objectAtIndex:0].text);
+//
+//}];
+//UIAlertAction *action2 = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
+//[alertVc addAction:action2];
+//[alertVc addAction:action1];
+//[vc presentViewController:alertVc animated:YES completion:nil];
