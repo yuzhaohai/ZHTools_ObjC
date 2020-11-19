@@ -25,10 +25,4 @@ typedef void(^ZHTimerBlock)(NSTimer *timer);
  */
 - (void)zh_resume;
 
-
-/**
- NStimer原有的isValid属性不再准确，请使用zh_IsValid
- */
-- (BOOL)zh_isValid;
-
 @end
