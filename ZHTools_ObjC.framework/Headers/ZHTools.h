@@ -27,12 +27,7 @@
  */
 + (NSString *)romanNumeralFromInteger:(NSInteger)integerValue;
 
-/**
-生成随机数，包含start和end
-*/
 + (int)randomNumberFrom:(int)start to:(int)end;
-
-+ (UIFont *)fontWithTTFPath:(NSString *)ttfPath size:(CGFloat)size ;
 
 
 @end
