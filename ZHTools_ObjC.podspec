@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ZHTools_ObjC"
-  s.version      = "1.7.1"
+  s.version      = "1.7.2"
   s.summary      = "a useful tool for iOS develop"
 
   s.homepage     = "https://github.com/yuzhaohai/ZHTools_ObjC"
