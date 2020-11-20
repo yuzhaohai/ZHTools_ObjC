@@ -22,7 +22,6 @@ FOUNDATION_EXPORT const unsigned char ZHTools_ObjCVersionString[];
 #import <ZHTools_ObjC/ZHAlertController.h>
 #import <ZHTools_ObjC/ZHPopoverViewController.h>
 #import <ZHTools_ObjC/ZHWebViewController.h>
-#import <ZHTools_ObjC/ZHButton.h>
 
 #import <ZHTools_ObjC/NSUserDefaults(ZHTools).h>
 #import <ZHTools_ObjC/NSDictionary(ZHTools).h>
@@ -34,6 +33,7 @@ FOUNDATION_EXPORT const unsigned char ZHTools_ObjCVersionString[];
 #import <ZHTools_ObjC/NSData(ZHTools).h>
 
 #import <ZHTools_ObjC/UIColor(ZHTools).h>
+#import <ZHTools_ObjC/UIFont(ZHTools).h>
 #import <ZHTools_ObjC/UIImage(ZHTools).h>
 #import <ZHTools_ObjC/UIView(ZHTools).h>
 #import <ZHTools_ObjC/UIView(ZHView).h>
