@@ -33,7 +33,6 @@ FOUNDATION_EXPORT const unsigned char ZHTools_ObjCVersionString[];
 #import <ZHTools_ObjC/NSData(ZHTools).h>
 
 #import <ZHTools_ObjC/UIColor(ZHTools).h>
-#import <ZHTools_ObjC/UIFont(ZHTools).h>
 #import <ZHTools_ObjC/UIImage(ZHTools).h>
 #import <ZHTools_ObjC/UIView(ZHTools).h>
 #import <ZHTools_ObjC/UIView(ZHView).h>
