@@ -1,7 +1,7 @@
 # ZHTools_ObjC
 天下武功 唯快不破
 
-pod 'ZHTools_ObjC',:git => 'https://github.com/yuzhaohai/ZHTools_ObjC.git'
+pod 'ZHTools_ObjC'
 
 ``` objectivec
 [UILabel viewWithDictionary:@{
